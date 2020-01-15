@@ -529,6 +529,7 @@ header .menu ul li a span:nth-of-type(2) {
   color: var(--text-color);
   font-size: 1.8rem;
   font-weight: bold;
+  padding: 0 15px;
 }
 .filter .filter-data .filter-data_cards {
   display: flex;
@@ -640,6 +641,56 @@ header .menu ul li a span:nth-of-type(2) {
 }
 .filter .filter-data .card-container .card:hover .card-offers {
   border-bottom: 1px solid var(--scrollbar-top);
+}
+@media (max-width: 991px) {
+  .filter .filter-container > div:nth-of-type(1) .filter-itemlist {
+    margin: 0;
+  }
+  .filter .filter-container > div:nth-of-type(1) .filter-itemlist .filter-item {
+    padding: 0.4rem;
+  }
+}
+@media (max-width: 767px) {
+  .filter .filter-container > div:nth-of-type(1) .filter-itemlist {
+    top: 80px;
+  }
+  .filter .filter-container {
+    flex-direction: column;
+  }
+  .filter .filter-container > div:nth-of-type(1) .filter-itemlist {
+    height: auto;
+    flex-direction: row;
+    overflow-x: auto;
+  }
+  .filter
+    .filter-container
+    > div:nth-of-type(1)
+    .filter-itemlist
+    .filter-item
+    .filter-data-text
+    .para {
+    display: none;
+  }
+  .filter
+    .filter-container
+    > div:nth-of-type(1)
+    .filter-itemlist::-webkit-scrollbar {
+    display: none;
+  }
+  .filter .filter-container > div:nth-of-type(1) .filter-itemlist .filter-item {
+    flex-direction: column;
+    min-width: 125px;
+  }
+  .filter
+    .filter-container
+    > div:nth-of-type(1)
+    .filter-itemlist
+    .filter-item
+    .filter-data-text
+    .heading {
+    text-align: center;
+    font-size: 0.8rem;
+  }
 }
 /* FILTER */
 
